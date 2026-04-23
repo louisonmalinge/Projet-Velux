@@ -1,0 +1,1 @@
+Dans cette version, le fill factor est calculé et affiché avec la puissance maximale P_mpp. Par la suite, l'écran indique si le panneau est OK ou H.S. .Au début du programme, un test de connexion avec la charge et le multimètre est effectué pour vérifier que l'ensemble communique correctement.
