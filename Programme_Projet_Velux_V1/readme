@@ -1,0 +1,2 @@
+Cette première version du programme permet de tester la tension à vide, l'intensité de court-circuit et la puissance maximale, 
+et de les afficher en utilisant les instructions case et break, ainsi que les fichiers Ecran.h, Ecran.cpp, Siglent.h et Siglent.cpp.
