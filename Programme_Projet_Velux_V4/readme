@@ -1,0 +1,1 @@
+Version 4 : Dans ce code, nous avons ajouté les fichiers Bouton.h et Bouton.cpp pour gérer la valeur du bouton dans plusieurs fichiers, comme le .ino et Ecran.cpp. Ces nouveaux fichiers permettent d’afficher le résultat du test tant que le bouton n’est pas pressé de nouveau.
