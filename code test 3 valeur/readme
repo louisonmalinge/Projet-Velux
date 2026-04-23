@@ -1,1 +1,2 @@
-
+Ce code permet d'afficher trois valeurs : la tension à vide, l'intensité de court-circuit, et l'intensité pour une tension imposée de 2 volts.
+Ce programme a été conçu pour tester le montage sur breadboard, vérifier que la communication avec les deux appareils signal fonctionnait correctement, et tester l'affichage sur l'écran.
