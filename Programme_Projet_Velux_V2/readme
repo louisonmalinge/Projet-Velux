@@ -1,0 +1,1 @@
+La version 2 du code inclut le début du calcul du fill factor, afin de n'afficher que celui-ci en utilisant la tension à vide, l'intensité de court-circuit et la puissance maximale.
