@@ -142,11 +142,11 @@ float mesure_Pmpp()
 /*=========================Fonction pour calculer le Fill Factor=========================*/ 
 Variable_Fill_Factor calculer_Fill_Factor()
 {
-    float Isc=0;
     Variable_Fill_Factor result;
     float Voc = mesure_voc();       // Mesurer Voc
-    Isc = mesure_isc();       // Mesurer Isc
-    result.Pmpp = mesure_Pmpp();    // Mesurer Pmpp
+    float Isc = mesure_isc();       // Mesurer Isc
+    result.Pmpp = mesure_Pmpp();    // Mesurer Pmpp*
+    result.FF = (result.Pmpp/ (Voc * Isc ));
     return result;
 }
 
