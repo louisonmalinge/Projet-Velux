@@ -74,13 +74,14 @@ float mesure_voc()
 
 float mesure_isc()
 {
+    float courant;
     set_charge_state(clientCharge, siglentCharge, port, ":SOURce:SHORt:STATe ON"); // Activer le mode courant de court-circuit
     set_charge_state(clientCharge, siglentCharge, port, "SOUR:INP ON"); // Activer le mode imposer une tension 
     delay(500);
 
     String Isc =  interroger_instrument(clientMulti, siglentMulti, port, "MEAS:CURR:DC?"); // Demander au mutlimètre son intensité
     Serial.println(Isc); // Ecrire dans le moniteur l'intenisté Isc'
-    extern float courant = Isc.toFloat() ; //convertir la réponse string en float
+    courant = Isc.toFloat() ; //convertir la réponse string en float
     delay(500);
 
     set_charge_state(clientCharge, siglentCharge, port, ":SOURce:SHORt:STATe OFF"); // Désactiver le mode courant de court-circuit
