@@ -29,7 +29,7 @@ void affichage_debut()
 
  void afficher_resultat_Voc() 
 {
-  extern float Voc = mesure_voc(); // Incrémenter le variable avec le résulat de la fonction mesure_voc
+  float Voc = mesure_voc(); // Incrémenter le variable avec le résulat de la fonction mesure_voc
   display.print("Le VOC est : ");
   display.print(Voc);             // Afficher sur l'écran la valeur de la tesnion à vide
   display.print(" V \n");
@@ -39,10 +39,10 @@ void affichage_debut()
 
  void afficher_resultat_Isc() 
 { 
-  extern float Isc = mesure_isc(); // Incrémenter le variable avec le résulat de la fonction mesure_isc
+  float Isc = mesure_isc(); // Incrémenter le variable avec le résulat de la fonction mesure_isc
   display.print("L'ISC est : ");
   display.print(Isc* 1000.0, 1);  // Afficher sur l'écran la valeur de l'intensité de court-circuit en mA'
-  display.print(" A \n");
+  display.print(" mA \n");
   display.display();
   delay(500);
 }
@@ -50,15 +50,10 @@ void affichage_debut()
 
 void afficher_resultat_Pmpp()
 {
-  extern float Pmpp = mesure_Pmpp();
+   float Pmpp = mesure_Pmpp();
   display.print("La puissance Max est de ");
   display.print(Pmpp* 1000.0, 1);             // Afficher sur l'écran la valeur du Pmpp
   display.print(" mW \n");
   display.display();
   delay(500);
-}
-
-void afficher_Fill_Factor()
-{
-  float FF= Pmpp /(Voc*Isc)
 }
