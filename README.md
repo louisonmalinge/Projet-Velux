@@ -1,0 +1,1 @@
+Bonjour et bienvenue sur le Git qui a permis de réaliser le projet d’automatisation du banc de test de panneau solaire. Vous retrouverez dans ce Git tous les fichiers qui ont contribué à la réalisation du projet.
